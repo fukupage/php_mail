@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メールフォーム</title>
+</head>
+
+<body>
+  <h1>メールフォームです</h1>
+  <form action="thanks.php" method="POST">
+    <P>氏名：<input type="text" name="name"></p>
+    <P>年齢：<input type="text" name="age"></p>
+    <P>性別：<input type="radio" name="gender" value="male" checked="checked">男性｜<input type="radio" name="gender" value="female">女性</p>
+    <p>住所：
+      <select name="address">
+        <option value="">選択してください</option>
+        <option value="sapporo">札幌</option>
+        <option value="sendai">仙台</option>
+        <option value="tokyo">東京</option>
+        <option value="nagoya">名古屋</option>
+        <option value="osaka">大阪</option>
+        <option value="hakata">博多</option>
+        <option value="other">その他</option>
+      </select>
+    </p>
+    <p>
+      <textarea name="message" cols="30" rows="10"></textarea>
+    </p>
+    <P><button type="submit">送信</button></p>
+  </form>
+</body>
+
+</html>
